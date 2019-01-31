@@ -1,0 +1,23 @@
+<!--<h1>Login</h1>
+
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <input [(ngModel)]="usuario.nome" id="usuario" type="text" pInputText placeholder="Username">         
+        </div>
+    </div>
+
+<div class="row">
+    <div class="input-field col s12">
+    <input [(ngModel)]="usuario.senha" id="senha" type="password" pInputText placeholder="Senha"/>
+    </div>
+</div><br>-->
+
+<div class="wrapper">
+    <form class="col-md-4">       
+      <h1>Login</h1>
+      <input [(ngModel)]="usuario.nome" id="usuario" type="text" class="form-control" name="usuario" placeholder="Email" required="" autofocus="" />
+      <input [(ngModel)]="usuario.senha" id="senha" type="password" class="form-control" name="senha" placeholder="Senha" required=""/>
+      <button type="submit" class="btn btn-primary" (click)="fazerLogin()"> Login</button>
+    </form>
+</div>
